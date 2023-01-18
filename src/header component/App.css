@@ -4,7 +4,19 @@
 }
 .vector{
   gap: 50px;
+
 }
 .card-sec{
   background-color: #003F62;;
+  gap: 50px;
+}
+.card-div{
+  gap: 110px;
+  margin-left: 110px;
+}
+.card-last{
+  margin-right: 110px;
+}
+.card-last-div{
+  gap: 20px;
 }
