@@ -5,6 +5,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { ItemList } from "./itemList";
+import { ImageSlider } from "./imageSlider";
+import { PopularProduct } from "./PopularProduct";
 
 export function Home() {
   return (
@@ -13,6 +15,8 @@ export function Home() {
       <HomeSearch />
       <SimpleNavbar />
       <ItemList />
+      <ImageSlider />
+      <PopularProduct />
     </>
   );
 }
@@ -68,7 +72,7 @@ function SimpleNavbar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <div>30 days free return</div>
+      <div id="days">30 days free return</div>
     </Navbar>
   );
 }
