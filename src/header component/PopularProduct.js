@@ -12,6 +12,43 @@ export function PopularProduct() {
           <button className="btn btn-outline-secondary item">Mouse</button>
         </div>
       </div>
+      <Item />
     </section>
+  );
+}
+function Item() {
+  return (
+    <>
+      <div className="head-product">
+        <div className="product">
+          <img src="camera 1.png" alt="camera" />
+          <img src="Frame28.png" alt="frame" />
+          <h4>Camera</h4>
+          <h5>$11.70</h5>
+          <img src="Frame36.png" alt="frame36" />
+        </div>
+        <div className="product">
+          <img src="camera 1.png" alt="camera" />
+          <img src="Frame28.png" alt="frame" />
+          <h4>Camera</h4>
+          <h5>$11.70</h5>
+          <img src="Frame36.png" alt="frame36" />
+        </div>
+        <div className="product">
+          <img src="camera 1.png" alt="camera" />
+          <img src="Frame28.png" alt="frame" />
+          <h4>Camera</h4>
+          <h5>$11.70</h5>
+          <img src="Frame36.png" alt="frame36" />
+        </div>
+        <div className="product">
+          <img src="camera 1.png" alt="camera" />
+          <img src="Frame28.png" alt="frame" />
+          <h4>Camera</h4>
+          <h5>$11.70</h5>
+          <img src="Frame36.png" alt="frame36" />
+        </div>
+      </div>
+    </>
   );
 }

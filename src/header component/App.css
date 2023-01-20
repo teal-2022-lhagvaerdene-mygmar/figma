@@ -65,3 +65,14 @@ h2{
   height: 45px;
   border-radius: 25px;
 }
+.product{
+  border: 1px solid black;
+  width: 270px;
+  height: 310px;
+  padding-left: 40px;
+  border-radius: 30px;
+}
+.head-product{
+  display: flex;
+  gap: 70px;
+  justify-content: center;}
