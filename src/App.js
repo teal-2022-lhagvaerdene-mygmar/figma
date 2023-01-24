@@ -1,7 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+import { Header } from "./header component/Header";
+import "./app.css";
 
-import { Home } from "./header component/home";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,7 +19,7 @@ function App() {
 function FigmaApp() {
   return (
     <>
-      <Home />
+      <Header />
       <br />
       <Link to="/path">path</Link>
     </>
