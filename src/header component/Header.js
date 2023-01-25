@@ -28,8 +28,8 @@ function Search() {
       <div
         className="container-fluid text-light row align-items-center py-3"
         style={{ backgroundColor: "#003F62" }}>
-        <img src="logo 1.png" alt="electron " className="col-6 col-md-2 " />
-        <form className="col-6  ">
+        <img src="logo 1.png" alt="electron " className="col-4 col-md-2 " />
+        <form className="col-8 col-md-6  ">
           <input placeholder="search" className="border-0 rounded-4 " />
           <button
             className="border-0 rounded-4 bg-warning text-light "
