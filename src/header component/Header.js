@@ -1,3 +1,7 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
 export function Header() {
   return (
     <>
@@ -20,16 +24,57 @@ export function Header() {
 }
 function Search() {
   return (
-    <div
-      className="container-fluid text-light row align-items-center"
-      style={{ backgroundColor: "#003F62" }}>
-      <img src="logo 1.png" alt="electron " className="col-6 col-md-2" />
-      <form className="col-6  ">
-        <input placeholder="search" className="border-0 rounded-4 " />
-        <button className="border-0 rounded-4">search</button>
-      </form>
+    <>
+      <div
+        className="container-fluid text-light row align-items-center py-3"
+        style={{ backgroundColor: "#003F62" }}>
+        <img src="logo 1.png" alt="electron " className="col-6 col-md-2 " />
+        <form className="col-6  ">
+          <input placeholder="search" className="border-0 rounded-4 " />
+          <button
+            className="border-0 rounded-4 bg-warning text-light "
+            style={{ position: "relative", right: 50 }}>
+            search
+          </button>
+        </form>
 
-      <h4 className="col-12 col-md-4"></h4>
-    </div>
+        <h4 className="col-12 col-md-4 text-center">
+          <img src="user.png " alt="user" /> sign in
+          <img src="heart.png" alt="heart" className="mx-3" />
+          <img
+            src="0.png"
+            alt="0"
+            className="bg-warning rounded-2"
+            width={10}
+          />
+          <img src="shopping-cart.png" alt="shopping" className="mx-3" />
+          <img
+            src="0.png"
+            alt="0"
+            className="bg-warning rounded-2"
+            width={10}
+          />
+        </h4>
+      </div>
+      <AdminNavbar />
+    </>
+  );
+}
+function AdminNavbar() {
+  return (
+    <>
+      <Navbar bg="light" variant="light">
+        <Container>
+          <Navbar.Brand href="#home" className="bg-warning">
+            Navbar
+          </Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
   );
 }
