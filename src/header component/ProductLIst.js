@@ -44,7 +44,7 @@ const ImageSlider = () => {
         images={images}
         showBullets={true}
         showNavs={true}
-        style={{ backgroundColor: "white", color: "black" }}
+        style={{ backgroundColor: "white"}}
       />
     </div>
   );
