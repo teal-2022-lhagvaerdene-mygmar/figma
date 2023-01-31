@@ -31,18 +31,108 @@ export function ProductList() {
     </>
   );
 }
-
 function ImageSlider() {
   return (
-    <div className="container ">
-      <SimpleImageSlider
-        width={896}
-        height={504}
-        images={images}
-        showBullets={true}
-        showNavs={true}
-        style={{ backgroundColor: "white", color: "black" }}
-      />
-    </div>
+    <Carousel variant="dark">
+      <Carousel.Item>
+        <div className="conteiner-md">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-6" src="21.png" alt="First slide" />
+                <div className="col-6">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-4" src="51.png" alt="First slide" />
+                <div className="col-8">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-4" src="81.png" alt="First slide" />
+                <div className="col-8">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="conteiner-md">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-6" src="21.png" alt="First slide" />
+                <div className="col-6">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-4" src="51.png" alt="First slide" />
+                <div className="col-8">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-4" src="81.png" alt="First slide" />
+                <div className="col-8">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="conteiner-md">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-6" src="21.png" alt="First slide" />
+                <div className="col-6">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-4" src="51.png" alt="First slide" />
+                <div className="col-8">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-3 border border-dark rounded mx-4">
+              <div className="row">
+                <img className="col-4" src="81.png" alt="First slide" />
+                <div className="col-8">
+                  <h5>Speaker</h5>
+                  <h6>(6 items) </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Carousel.Item>
+    </Carousel>
   );
 }
