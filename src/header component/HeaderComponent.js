@@ -1,4 +1,5 @@
 import { Header } from "./Header";
+import { ProductItem } from "./ProductItem";
 import { ProductList } from "./ProductLIst";
 
 export function HeaderComponent() {
@@ -6,6 +7,7 @@ export function HeaderComponent() {
     <>
       <Header />
       <ProductList />
+      <ProductItem />
     </>
   );
 }
