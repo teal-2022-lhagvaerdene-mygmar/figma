@@ -26,36 +26,59 @@ function Search() {
   return (
     <>
       <div
-        className="container-fluid text-light row align-items-center py-3"
+        className="container-fluid text-light  py-4 d-flex"
         style={{ backgroundColor: "#003F62" }}>
-        <img src="logo 1.png" alt="electron " className="col-4 col-md-2 " />
-          <form className="col-8 col-md-6\  ">
-          <input placeholder="search" className="border-0 rounded-4 " />
+        <img
+          src="logo 1.png"
+          alt="electron "
+          height={40}
+          width={140}
+          style={{ marginLeft: 120 }}
+        />
+        <form className="mx-5">
+          <input
+            placeholder="Search any things"
+            className="border-0 rounded-4 "
+            style={{
+              width: 440,
+              height: 54,
+              fontSize: 14,
+              fontWeight: 400,
+              lineHeight: 21,
+            }}
+          />
           <button
             className="border-0 rounded-4 bg-warning text-light "
-            style={{ position: "relative", right: 50 }}>
+            style={{
+              height: 54,
+              width: 156,
+              position: "relative",
+              right: 156,
+            }}>
             search
           </button>
         </form>
-
-        <h4 className="col-12 col-md-4 text-center">
-          <img src="user.png " alt="user" /> sign in
-          <img src="heart.png" alt="heart" className="mx-3" />
-          <img
-            src="0.png"
-            alt="0"
-            className="bg-warning rounded-2"
-            width={10}
-          />
-          <img src="shopping-cart.png" alt="shopping" className="mx-3" />
-          <img
-            src="0.png"
-            alt="0"
-            className="bg-warning rounded-2"
-            width={10}
-          />
-        </h4>
+        <div style={{ marginLeft: 750 }}>
+          <h4>
+            <img src="user.png " alt="user" /> sign in
+            <img src="heart.png" alt="heart" className="mx-3" />
+            <img
+              src="0.png"
+              alt="0"
+              className="bg-warning rounded-2"
+              width={10}
+            />
+            <img src="shopping-cart.png" alt="shopping" className="mx-3" />
+            <img
+              src="0.png"
+              alt="0"
+              className="bg-warning rounded-2"
+              width={10}
+            />
+          </h4>
+        </div>
       </div>
+
       <AdminNavbar />
     </>
   );
