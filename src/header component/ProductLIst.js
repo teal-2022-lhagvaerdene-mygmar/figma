@@ -5,7 +5,16 @@ export function ProductList() {
       <div className="container text-center">
         <div className="row  align-items-center ">
           <div className="col-12 col-md-6 my-3">
-            <h1 style={{ fontSize: 43, color: "#1B5A7D" }}>Canon camera</h1>
+            <h1
+              style={{
+                fontSize: 43,
+                color: "#1B5A7D",
+                fontWeight: 700,
+                width: 175,
+                height: 135,
+              }}>
+              Canon camera
+            </h1>
             <button className="btn btn-warning mx-3">Shop now</button>
             <button className="btn btn-outline-primary">View more</button>
           </div>

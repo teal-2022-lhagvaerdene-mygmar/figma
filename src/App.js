@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./app.css";
 import { HeaderComponent } from "./header component/HeaderComponent";
 
@@ -16,8 +16,6 @@ function FigmaApp() {
   return (
     <>
       <HeaderComponent />
-      <br />
-      <Link to="/path">path</Link>
     </>
   );
 }

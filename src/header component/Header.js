@@ -1,11 +1,11 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { AdminNavbar } from "./AdminNavbar";
 
 export function Header() {
   return (
     <>
-      <header className="container-fluid" style={{ color: "#292D32" }}>
+      <header
+        className="container-fluid"
+        style={{ color: "#292D32", padding: 30 }}>
         <div className="row justify-content-between text-center">
           <h5 className="col-6 col-md-4">
             Need help? Call us: (+98) 0234 456 789
@@ -19,6 +19,7 @@ export function Header() {
         </div>
       </header>
       <Search />
+      <AdminNavbar />
     </>
   );
 }
@@ -48,17 +49,20 @@ function Search() {
             }}
           />
           <button
-            className="border-0 rounded-4 bg-warning text-light "
+            className="border-0 rounded-4 text-light "
             style={{
               height: 54,
               width: 156,
               position: "relative",
               right: 156,
+              fontSize: 18,
+              backgroundColor: "#EDA415",
             }}>
             search
           </button>
         </form>
-        <div style={{ marginLeft: 750 }}>
+
+        <div>
           <h4>
             <img src="user.png " alt="user" /> sign in
             <img src="heart.png" alt="heart" className="mx-3" />
@@ -78,26 +82,6 @@ function Search() {
           </h4>
         </div>
       </div>
-
-      <AdminNavbar />
-    </>
-  );
-}
-function AdminNavbar() {
-  return (
-    <>
-      <Navbar bg="light" variant="light">
-        <Container>
-          <Navbar.Brand href="#home" className="bg-warning">
-            Navbar
-          </Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
     </>
   );
 }
